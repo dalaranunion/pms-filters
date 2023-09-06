@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --shadow-ui-1: 0 3px 13px -1px rgba(0, 0, 0, 0.4);
+  --shadow-ui-2: 0 -3px 13px -1px rgba(0, 0, 0, 0.4);
+  --shadow-ui-3: 0px 3px 9px 0px rgba(0, 0, 0, .2);
+  --spacer: 0.75rem;
+  --gutter-size-1: calc(var(--spacer) * 1);
+  --gutter-size-2: calc(var(--spacer) * 2);
+  --gutter-size-3: calc(var(--spacer) * 2.5);
+  --gutter-size-4: calc(var(--spacer) * 3.75);
+  --gutter-size-5: calc(var(--spacer) * 5);
+  --gutter-size-6: calc(var(--spacer) * 7.5);
+  --gutter-width: var(--gutter-size-3);
+  --gutter-width-half: calc(var(--spacer) * 1.25);
+  --border-radius-1: 3px;
+  --border-radius-2: 5px;
+  --border-radius-3: 10px;
+  --border-radius-3: 16px;
+  --border-radius-4: 20px;
+  --site-width: calc(var(--spacer) * 105);
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.contentwidthhalf, .contentwidthnopadding, .contentwidth {
+  width: 100%;
+  max-width: var(--site-width);
+  margin-left: auto;
+  margin-right: auto;
+}
+.contentwidthnopadding {
+  max-width: calc(var(--spacer) * 100);
+}
+.contentwidthhalf {
+    max-width: calc(var(--site-width) / 2);
+}
+.guttermargin {
+  /* actial size gutter is 30px */
+  margin-left: var( --gutter-width);
+  margin-right: var( --gutter-width);
+}
+.guttercontentwidth {
+    /* actial size gutter is 30px */
+    padding-left: var( --gutter-width);
+    padding-right: var( --gutter-width);
+}
+.guttermarginhalf {
+  margin-left: var( --gutter-width-half);
+  margin-right: var( --gutter-width-half);
+}
+.guttercontentwidthhalf {
+    padding-left: var( --gutter-width-half);
+    padding-right: var( --gutter-width-half);
+}
+/* IDS GO HERE */
+#filters-wrap {
+  padding-top: 2rem;
 }

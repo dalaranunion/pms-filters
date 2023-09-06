@@ -5,7 +5,7 @@ class pmsResultsNum extends React.Component {
     super(props);
   }
   render() {
-    <div class="pmsResultsNum heading-lg">{this.props.value} Products</div>;
+    <div className="pmsResultsNum heading-lg">{this.props.value} Products</div>;
   }
 }
 export default pmsResultsNum;
