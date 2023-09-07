@@ -1,6 +1,15 @@
 import logo from "./logo.svg";
 import ClearFiltersBtn from "./ui-elements/filtersClearBtn";
 import "./App.css";
+import productsJson from "./products.json";
+
+// // Pull JSON file and process it
+// let jsonText = document.getElementById("pms-json").innerHTML;
+// // Fix formatting before processing
+// jsonText = jsonText.replaceAll(/},\s*]}/g, "}]}").replace("]},]}", "]}]}");
+//const products = JSON.parse(jsonText);
+
+const products = JSON.parse(productsJson);
 
 function App() {
   return (
